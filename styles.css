@@ -1,12 +1,6 @@
 body {
-  background-image: url(/images/background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   margin: 0;
   padding: 0;
-  min-height: 100vh;
 }
 
 .font-main {
@@ -15,7 +9,27 @@ body {
   font-style: normal;
 }
 
+/* HERO SECTION */
+
+.hero {
+  background-image: url(/images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  
+}
+
 .title {
     font-size: 3rem;
     color: #574145;
 }
+
+.text {
+  background-color: #5741453b;
+  color: white;
+}
+

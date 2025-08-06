@@ -4,9 +4,11 @@ body {
 }
 
 .font-main {
-  font-family: "Nanum Brush Script", cursive;
-  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
   font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
 
 /* HERO SECTION */
@@ -32,27 +34,10 @@ body {
   margin-bottom: 2rem;
 }
 
-.content-container {
-  display: flex;
-  align-items: flex-start;
-  gap: 2rem;
-  max-width: 1200px;
-  width: 100%;
-  padding: 2 2rem;
+
+
+.brain {
+  width: 100px;
 }
 
-.header img {
-  max-width: 400px;
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
 
-.text {
-  background-color: #5741453b;
-  color: white;
-  padding: 1.5rem;
-  border-radius: 8px;
-  flex: 1;
-  line-height: 1.6;
-}

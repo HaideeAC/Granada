@@ -3,20 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>🍏Apple</title>
+    <title>🍏Fruit & Brain Health</title>
     <link rel="stylesheet" href="/styles.css" />
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <div class="hero">
-      <div class="title font-main">APPLE</div>
-<div class="herocontainer"><img class="brain" src="/images/brain.png" alt=""></div>
+      <div class="title font-main">
+        FRUIT <br />
+        BRAIN
+      </div>
+      <div class="mainimg">
+        <img src="/images/brain.png" alt="" onclick="openMenu()" />
+      </div>
+      <div class="text">
+        your brain is literally rewiring itself with every berry you eat! These
+        fruits aren't just "healthy snacks" - they're precision tools for
+        cognitive enhancement.
+      </div>
+
       <footer>
         This project was coded by
         <a href="https://github.com/HaideeAC" target="_blank">HÁ</a> and is
@@ -25,5 +36,37 @@
         >
       </footer>
     </div>
+
+    <!-- Fullscreen Menu -->
+    <div class="fullscreen-menu" id="fruitMenu">
+      <button class="menu-close" onclick="closeMenu()">&times;</button>
+
+      <div class="menu-text">
+        🧠 Brain-Boosting Superfruits: Your Daily Dose of Genius!<br /><br />
+        Transform your mind with nature's smartest snacks! These colorful
+        champions will literally rewire your brain with every bite. Click on a
+        fruit to discover its incredible cognitive superpowers.
+      </div>
+
+      <div class="fruit-circles">
+        <div class="fruit-circle">
+          <span>🫐<br />Blueberries</span>
+        </div>
+        <div class="fruit-circle">
+          <span>🍓<br />Strawberries</span>
+        </div>
+        <div class="fruit-circle">
+          <span>🥝<br />Kiwi</span>
+        </div>
+        <div class="fruit-circle">
+          <span>🥑<br />Avocado</span>
+        </div>
+        <div class="fruit-circle">
+          <span>🍊<br />Citrus</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="/index.js"></script>
   </body>
 </html>

@@ -15,14 +15,18 @@ section {
 }
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 64px;
 }
-
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-3-columns-narrow {
+  grid-template-columns: 1fr 2fr 2fr;
+}
 /* HEADER */
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),
-    url(/images/6.jpg);
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url(/images/6.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -72,6 +76,11 @@ main {
   background-color: white;
   color: #282117;
 }
+.main-image {
+  width: 80%;
+  padding-top: 0%;
+  position: relative;
+}
 main h2 {
   font-weight: 700;
   font-size: 16px;
@@ -79,6 +88,7 @@ main h2 {
   /* identical to box height */
 
   letter-spacing: 5px;
+  color: #272044;
   opacity: 0.3;
   text-transform: uppercase;
   margin: 0;
@@ -87,6 +97,7 @@ main h3 {
   font-weight: 700;
   font-size: 40px;
   line-height: 1.5;
+  color: #272044;
   margin: 0;
 }
 main p {
@@ -97,14 +108,11 @@ main p {
   opacity: 0.7;
 }
 
-
 /* FOOTER */
 footer {
   color: white;
-  background-image: linear-gradient(
-      rgba(40, 33, 23, 0.8),
-      rgba(40, 33, 23, 0.9)
-    ),
+  background-image:
+    linear-gradient(rgba(40, 33, 23, 0.8), rgba(40, 33, 23, 0.9)),
     url(/images/12.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -145,4 +153,12 @@ footer a {
   header h3 {
     font-size: 12px;
   }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+  .main-image {
+    display: none;
+  }
+  
 }

@@ -8,10 +8,20 @@ body {
   margin: 0 auto;
 }
 
+.text-centered {
+  text-align: center;
+}
+
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
+}
+section.secondary {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(/images/section2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .grid {
   display: grid;
@@ -19,6 +29,7 @@ section {
 }
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
+  padding: 50px;
 }
 .grid-3-columns-narrow {
   grid-template-columns: 1fr 2fr 2fr;

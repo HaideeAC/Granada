@@ -23,6 +23,9 @@ section.secondary {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.img-responsive {
+  max-width: 100%;
+}
 .grid {
   display: grid;
   grid-gap: 64px;
@@ -33,6 +36,10 @@ section.secondary {
 }
 .grid-3-columns-narrow {
   grid-template-columns: 1fr 2fr 2fr;
+}
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+
 }
 /* HEADER */
 header {
@@ -111,6 +118,18 @@ main h3 {
   color: #272044;
   margin: 0;
 }
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #272044;
+}
+main h5 {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #272044;
+}
 main p {
   font-style: normal;
   font-weight: 400;
@@ -118,6 +137,20 @@ main p {
   line-height: 1.5;
   opacity: 0.7;
 }
+
+/* MAIN SECONDARY */
+
+.card{
+  background:
+    linear-gradient(rgba(40, 33, 23, 0.7), rgba(40, 33, 23, 0.2));
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.btn {
+  display: block;
+}
+
 
 /* FOOTER */
 footer {
